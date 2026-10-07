@@ -1,5 +1,8 @@
 # Unsupervised Graph Representation Learning from AIS Maritime Traffic
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23204145.svg)](https://doi.org/10.5281/zenodo.23204145)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Code release accompanying the paper *"Unsupervised Graph Representation Learning
 from AIS Maritime Traffic"*.
 
