@@ -1,0 +1,23 @@
+{
+  "title": "Unsupervised Graph Representation Learning from AIS Maritime Traffic: code",
+  "upload_type": "software",
+  "description": "<p>Code release accompanying the paper <em>Unsupervised Graph Representation Learning from AIS Maritime Traffic</em> (Maritime Transport Research, in press).</p><p>The paper investigates whether unsupervised graph representation learning can produce meaningful and operationally useful port embeddings from a global, directed, attributed port-visit network built from 6.15 million AIS-derived vessel journeys. It evaluates Deep Graph Infomax (DGI) with a DirectedGCN encoder against Raw Features, Node2Vec, GraphSAGE, GAE, HOPE, PortCity2Vec, and higher-order Markov chains on structural analysis tasks and next-port prediction, alongside a replication of DGI on the standard Planetoid benchmarks (Cora, Citeseer, Pubmed).</p><p>This repository provides the full implementation: the model, preprocessing, baselines, evaluation protocols, and experiment entry points. The licensed AIS data cannot be redistributed; a schema-faithful synthetic sample makes every pipeline runnable end-to-end.</p>",
+  "creators": [
+    {
+      "name": "Pellemans, Mathijs",
+      "affiliation": "Department of Mathematics, Vrije Universiteit Amsterdam",
+      "orcid": "0000-0002-4347-5749"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "graph representation learning",
+    "Deep Graph Infomax",
+    "graph neural networks",
+    "AIS",
+    "maritime transport",
+    "port networks",
+    "next-port prediction"
+  ]
+}
