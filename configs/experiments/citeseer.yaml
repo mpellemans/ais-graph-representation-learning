@@ -1,0 +1,7 @@
+_base_: ../base.yaml
+
+data:
+  dataset: citeseer
+
+training:
+  epochs: 10000

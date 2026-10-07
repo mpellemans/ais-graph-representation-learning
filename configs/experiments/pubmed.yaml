@@ -1,0 +1,7 @@
+_base_: ../base.yaml
+
+data:
+  dataset: pubmed
+
+training:
+  epochs: 10000

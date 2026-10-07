@@ -1,0 +1,27 @@
+_base_: ../base.yaml
+
+# Synthetic-data variant of the maritime config. Points at the schema-faithful
+# synthetic sample produced by scripts/make_synthetic_data.py, so every maritime
+# entry point runs end-to-end without the licensed AIS data. Numbers produced on
+# this data are NOT the paper's numbers.
+
+model:
+  hidden_units: 512
+  activation: prelu
+  directed: true
+  use_edge_features: false
+
+training:
+  epochs: 10000
+  learning_rate: 0.0001
+  patience: 20
+  grad_clip_norm: 1.0
+
+data:
+  dataset: maritime
+  sparse: true
+  data_dir: data/synthetic
+  skip_feature_normalization: true
+
+seed: 42
+output_dir: results/synthetic

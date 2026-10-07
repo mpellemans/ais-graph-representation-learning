@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+.dgi/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# IDE / tooling
+.idea/
+.vscode/
+.claude/
+.ipynb_checkpoints/
+.DS_Store
+
+# Experiment outputs (regenerated locally; never committed)
+results/
+outputs/
+
+# Model weights and checkpoints
+*.ckpt
+*.pt
+*.pkl
+
+# Licensed maritime data (never committed; see Data Availability in README)
+data/maritime/
+
+# Generated synthetic sample (regenerate with scripts/make_synthetic_data.py)
+data/synthetic/

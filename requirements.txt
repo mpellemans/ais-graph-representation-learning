@@ -1,0 +1,25 @@
+# Core dependencies, pinned to the versions used during development.
+# Paper experiments ran on the Snellius cluster with Python 3.12.3 and
+# torch==2.10.0+cu126 (CUDA 12.6); see scripts/*.sbatch.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+pandas==2.3.3
+pyarrow==23.0.0
+networkx==3.6.1
+matplotlib==3.10.8
+seaborn==0.13.2
+pyyaml==6.0.3
+pygeohash==3.2.2
+torch==2.10.0
+torch_geometric==2.7.0
+
+# Extra dependencies — only needed for specific entry points (see README);
+# not plain-installable because the wheels must match your torch build:
+#   pyg-lib, torch-cluster : random-walk backend for the Node2Vec baseline
+#                   (torch_geometric's Node2Vec loader). Install wheels matching
+#                   your torch build (see scripts/run_node2vec.sbatch), e.g.:
+#                   pip install pyg-lib torch-cluster --no-build-isolation \
+#                       -f https://data.pyg.org/whl/torch-2.10.0+cpu.html
+#   basemap, pyproj : experiments/maritime/plot_port_network.py (network figure)
+#                   pip install basemap==2.0.0 pyproj==3.7.2

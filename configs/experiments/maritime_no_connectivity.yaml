@@ -1,0 +1,28 @@
+_base_: ../base.yaml
+
+# Feature-removal robustness for the raw-features baseline. Drops the
+# degree/connectivity/activity-count node features (NODE_CONNECTIVITY_COLS) to
+# test whether the baseline's competitiveness depends on these full-period
+# aggregate features. Geographic features are kept.
+
+model:
+  hidden_units: 512
+  activation: prelu
+  directed: true
+  use_edge_features: false
+
+training:
+  epochs: 10000
+  learning_rate: 0.0001
+  patience: 20
+  grad_clip_norm: 1.0
+
+data:
+  dataset: maritime
+  sparse: true
+  data_dir: data/maritime
+  skip_feature_normalization: true
+  exclude_connectivity_features: true
+
+seed: 42
+output_dir: results/maritime

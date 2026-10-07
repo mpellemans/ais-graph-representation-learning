@@ -1,0 +1,18 @@
+model:
+  hidden_units: 512
+  activation: prelu
+  directed: false
+
+training:
+  epochs: 300
+  learning_rate: 0.001
+  weight_decay: 0.0
+  patience: 20
+  batch_size: 1
+
+data:
+  sparse: true
+  data_dir: data/planetoid
+
+output_dir: results
+seed: 42

@@ -1,0 +1,23 @@
+_base_: ../base.yaml
+
+model:
+  hidden_units: 512
+  activation: prelu
+  directed: true
+  use_edge_features: false
+
+training:
+  epochs: 10000
+  learning_rate: 0.0001
+  patience: 20
+  grad_clip_norm: 1.0
+
+data:
+  dataset: maritime
+  sparse: true
+  data_dir: data/maritime
+  skip_feature_normalization: true
+  sparsify_top_k: 10
+
+seed: 42
+output_dir: results/maritime

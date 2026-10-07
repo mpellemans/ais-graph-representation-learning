@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "ais-graph-representation-learning"
+type: software
+authors:
+  - family-names: Pellemans
+    given-names: Mathijs
+    orcid: "https://orcid.org/0000-0002-4347-5749"
+    affiliation: "Department of Mathematics, Vrije Universiteit Amsterdam"
+license: MIT
+repository-code: "https://github.com/mpellemans/ais-graph-representation-learning"
+preferred-citation:
+  type: article
+  title: "Unsupervised Graph Representation Learning from AIS Maritime Traffic"
+  authors:
+    - family-names: Pellemans
+      given-names: Mathijs
+      orcid: "https://orcid.org/0000-0002-4347-5749"
+      affiliation: "Department of Mathematics, Vrije Universiteit Amsterdam"
+  year: 2026
+  notes: "In Press at Maritime Transport Research; citation details will be updated upon publication."
